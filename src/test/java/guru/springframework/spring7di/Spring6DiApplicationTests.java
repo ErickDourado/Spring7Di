@@ -1,6 +1,6 @@
-package guru.springframework.spring6di;
+package guru.springframework.spring7di;
 
-import guru.springframework.spring6di.controllers.MyController;
+import guru.springframework.spring7di.controllers.MyController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -22,8 +22,8 @@ class Spring6DiApplicationTests {
 
     @Test
     void testControllerFromCtx() {
-        MyController myController = context.getBean(MyController.class);
-        System.out.println(myController.sayHello());
+        MyController myControllerCtx = context.getBean(MyController.class);
+        System.out.println(myControllerCtx.sayHello());
     }
 
 }
