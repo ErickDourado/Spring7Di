@@ -1,18 +1,18 @@
-package guru.springframework.spring6di.controllers;
+package guru.springframework.spring7di.controllers;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PropertyInjectedControllerTest {
+class ConstructorInjectedControllerTest {
 
     @Autowired
-    PropertyInjectedController propertyInjectedController;
+    ConstructorInjectedController constructorInjectedController;
 
     @Test
     void sayHello() {
-        System.out.println(propertyInjectedController.sayHello());
+        System.out.println(constructorInjectedController.sayHello());
     }
 
 }
