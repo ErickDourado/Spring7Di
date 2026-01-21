@@ -1,4 +1,4 @@
-package guru.springframework.spring6di.services;
+package guru.springframework.spring7di.services;
 
 public class GreetingServiceImpl implements GreetingService {
 
