@@ -1,15 +1,15 @@
-package guru.springframework.spring6di.controllers;
+package guru.springframework.spring7di.controllers.i18n;
 
-import guru.springframework.spring6di.services.GreetingService;
+import guru.springframework.spring7di.services.GreetingService;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
 @Controller
-public class ConstructorInjectedController {
+public class Myi18NController {
 
     private final GreetingService greetingService;
 
-    public ConstructorInjectedController(@Qualifier("greetingServiceImpl") GreetingService greetingService) {
+    public Myi18NController(@Qualifier("i18NService") GreetingService greetingService) {
         this.greetingService = greetingService;
     }
 
